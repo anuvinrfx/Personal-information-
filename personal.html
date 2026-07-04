@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+
+<title>ANUVIN RFX</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+background:linear-gradient(-45deg,#6a11cb,#2575fc,#ff416c,#ff4b2b);
+background-size:400% 400%;
+animation:bg 12s ease infinite;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.card{
+position:relative;
+width:380px;
+padding:35px;
+text-align:center;
+border-radius:25px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(20px);
+-webkit-backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.25);
+box-shadow:0 20px 50px rgba(0,0,0,.35);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.02);
+}
+
+.profile{
+width:170px;
+height:170px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid white;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+margin-bottom:20px;
+transition:.4s;
+}
+
+.profile:hover{
+transform:scale(1.08) rotate(5deg);
+}
+
+h1{
+font-size:32px;
+color:white;
+font-weight:700;
+}
+
+.job{
+color:#f1f1f1;
+font-size:15px;
+letter-spacing:2px;
+margin-top:5px;
+margin-bottom:25px;
+}
+
+.line{
+width:80px;
+height:4px;
+background:white;
+margin:15px auto 25px;
+border-radius:50px;
+}
+
+.info{
+text-align:left;
+margin-top:20px;
+}
+
+.row{
+display:flex;
+justify-content:space-between;
+padding:12px 0;
+border-bottom:1px solid rgba(255,255,255,.2);
+color:white;
+font-size:15px;
+}
+
+.row span:first-child{
+font-weight:600;
+}
+
+.social{
+margin-top:25px;
+}
+
+.social a{
+display:inline-flex;
+justify-content:center;
+align-items:center;
+width:48px;
+height:48px;
+margin:8px;
+border-radius:50%;
+background:white;
+color:#E1306C;
+font-size:22px;
+text-decoration:none;
+transition:.4s;
+}
+
+.social a:hover{
+transform:translateY(-8px) scale(1.15);
+background:#E1306C;
+color:white;
+box-shadow:0 10px 25px rgba(225,48,108,.5);
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 35px;
+border-radius:50px;
+background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+color:white;
+text-decoration:none;
+font-weight:600;
+font-size:16px;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+transition:.4s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+box-shadow:0 15px 40px rgba(220,39,67,.6);
+}
+
+.glow{
+position:absolute;
+width:180px;
+height:180px;
+background:#ffffff40;
+border-radius:50%;
+filter:blur(80px);
+top:-70px;
+left:-70px;
+z-index:-1;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+<div class="glow"></div>
+
+<img src="IMG_20260628_205402_534.webp" class="profile">
+
+<h1>ANUVIN RFX</h1>
+
+<div class="job">
+VIDEO • PHOTO EDITOR
+</div>
+
+<div class="line"></div>
+
+<div class="info">
+
+<div class="row">
+<span><i class="fa-solid fa-envelope"></i> Email</span>
+<span>unknown@email.com</span>
+</div>
+
+<div class="row">
+<span><i class="fa-solid fa-location-dot"></i> Location</span>
+<span>Kannur, Kerala 🇮🇳</span>
+</div>
+
+<div class="row">
+<span><i class="fa-solid fa-user-graduate"></i> Occupation</span>
+<span>Student</span>
+</div>
+
+</div>
+
+<div class="social">
+
+<a href="https://www.instagram.com/anuvin_rfx?igsh=MWRrb3M2dHdvdXdxMw==" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+</div>
+
+<a class="btn"
+href="https://www.instagram.com/anuvin_rfx?igsh=MWRrb3M2dHdvdXdxMw=="
+target="_blank">
+Follow on Instagram
+</a>
+
+</div>
+
+</body>
+</html>
